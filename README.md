@@ -1,52 +1,47 @@
-# Royce Cook — ENGL 5376 portfolio
+# Royce Cook — Professional Portfolio
 
-Open `index.html` in a browser. This is a static HTML/CSS site with local SVG assets, no build step, scripts, external fonts, or dependencies.
+A personal portfolio for my work in technical communication and my doctoral studies in Technical Communication and Rhetoric at Texas Tech University. The site brings together professional practice, research interests, and a brief introduction to my life beyond the desk.
 
-## Publish to GitHub Pages
+[View the portfolio](https://roycecook96.github.io/royce-cook-portfolio/)
 
-1. Extract this archive.
-2. Copy the **contents** of `royce-cook-portfolio-main` to the folder served by your existing repository, keeping `index.html`, `styles.css`, and `assets/` together. Avoid creating an extra nested directory in the published root.
-3. Commit and push through your normal GitHub workflow; wait for the Pages deployment to finish.
-4. Inspect the live URL and complete the checks below. This ZIP has not been deployed.
+## Content
 
-## Changes from the uploaded original
+- **About and current work:** My background and responsibilities as a technical writer at Docusign.
+- **Selected work:** Four project narratives covering Web Forms documentation, Workspaces release notes, the Release Notes FAQ, and an AI-assisted Release Notes Assistant using Atlassian Rovo.
+- **Professional philosophy:** Reader-centered organization, accessibility, collaboration, and human accountability.
+- **Research:** My developing interest in enterprise documentation as customer support infrastructure, including a comparison of potential AI support and human review.
+- **Beyond the desk:** A brief introduction to riding and my focus on confidence, fundamentals, and consistent practice.
+- **Contact:** A selectable email address and a Copy email button.
 
-- Replaced the three short professional-focus entries with four full Selected Work narratives: Web Forms, Workspaces release notes, Release Notes FAQ, and the Rovo Release Notes Assistant.
-- Added numbered project cards, summaries, skill categories, and descriptive public links. All narratives are visible without JavaScript or expansion controls.
-- Expanded current responsibilities and added a dedicated professional philosophy section.
-- Added Contact with the user-confirmed `royce.cook@ttu.edu` mail link and visible address.
-- Added Selected work, Philosophy, and Contact navigation.
-- Preserved the ivory/burgundy/sage palette, serif typography, monogram, horse illustration, research content, and equestrian section.
-- Retained responsive layouts, skip navigation, semantic headings and landmarks, image alternatives, focus outlines, table headers, print styling, and reduced-motion behavior. Added a focusable main destination, wrapping links, and mobile card layouts.
-- Kept the FAQ marked as work in progress and clarified that the published page may precede these revisions.
-- Kept Rovo conceptual: no private implementation artifacts or unpublished recognition are reproduced. Vendor links are clearly identified as technology background, not a demo or proof of the internal solution.
-- No additional product screenshots were supplied or approved. Existing local illustrations were retained; no third-party imagery was copied.
+## Design and accessibility
 
-## Verification performed — November 1, 2026
+The site uses an ivory, burgundy, and sage palette, serif headings, responsive CSS Grid layouts, and lightweight local SVG illustrations. Accessibility features include semantic landmarks, a skip link, ordered headings, descriptive image alternatives, visible keyboard focus, scoped table headers, balanced heading wrapping, and reduced-motion support. A print stylesheet is also included.
 
-- Parsed HTML: exactly four project articles, one H1, unique IDs, valid section anchors, image alternatives, and existing local assets.
-- Desktop browser inspection of the introduction, project cards, and contact section; Selected work and Contact links reached their intended fragments.
-- Browser layout checks at effective CSS widths of 1001, 469, and 320 pixels; document width matched the viewport without horizontal overflow. Narrow-layout screenshot capture was inconsistent; confirm the experience on a real phone before submission.
-- Main text contrast samples: burgundy on ivory 9.63:1; muted text on card white 6.80:1; dark text on sage 10.97:1. This is a targeted check, not a full accessibility audit.
-- Docusign public pages initially returned loading/CSS errors to the text-based checker. All three project destinations and the release index subsequently loaded in the browser without signing in.
-- Atlassian Rovo and Slack Workflow Builder pages loaded in the web checker.
+## Files
 
-### Verified public project destinations
+```text
+index.html          Page content and semantic structure
+styles.css          Design system, responsive layouts, and print styles
+contact.js          Email copying and accessible status messages
+assets/horse.svg    Horse illustration
+assets/monogram.svg Favicon
+```
 
-1. [Web Forms documentation](https://support.docusign.com/s/document-item?bundleId=isf1706308392098&language=en_US&topicId=gey1706310415679.html) — browser displayed Web Forms and its documentation navigation.
-2. [Workspaces October 2026 release notes](https://support.docusign.com/s/document-item?_LANG=enus&bundleId=map3e299eb3-94f1-41fe-9fe7-22b5089a2f6e&language=en_US&topicId=concc8fbfc3-0706-45d5-9759-fc0103c3d023.html) — browser displayed the October 2026 publication and New and Enhanced Features topic. This is a dated sample, not a claim to be the latest release.
-3. [Docusign Release Notes FAQ](https://support.docusign.com/s/articles/DocuSign-Release-Notes-FAQ?language=en_US) — browser displayed the FAQ and release-notification questions.
-4. [Release notes index](https://support.docusign.com/s/releasenotes?language=en_US&page=1) — browser displayed the public catalog.
-5. [Atlassian Rovo](https://www.atlassian.com/software/rovo) — technology reference only.
-6. [Slack Workflow Builder](https://slack.com/features/workflow-automation) — technology reference only.
+The site uses plain HTML, CSS, and a small JavaScript enhancement. No build step, external fonts, or package installation is required.
 
-Public pages verify destinations and subject matter; they do not independently verify individual authorship. Project roles and personal background follow the supplied portfolio and earlier narrative draft. No impact metrics or completed research outcomes were invented.
+## Preview and publish
 
-## Remaining checks before submission
+Open `index.html` in a browser to preview the content and layout. Clipboard access depends on browser permissions and context; test the Copy email button on the live HTTPS site. If clipboard access fails, the script highlights the address and provides manual-copy instructions. Without JavaScript, the address remains visible and selectable.
 
-- Review the four narratives for current responsibilities, contribution boundaries, and permission to describe employer work publicly.
-- After publishing, recheck all links and local assets on the live GitHub Pages URL.
-- On a real phone, check navigation wrapping, card readability, and absence of sideways scrolling; check text zoom at 200%.
-- Tab through the live site to check the skip link, link order, focus visibility, and email link. Confirm that your email client opens the correct recipient without sending a message.
-- Complete a screen-reader pass and any required usability testing with outside participants. No participant testing or full assistive-technology audit has been performed.
-- Submit the platform justification and any separate course feedback or UX documents required by the assignment. Those are separate from this website package.
+To update the existing GitHub Pages site:
+
+1. Upload changed files to the repository’s top level, keeping `index.html`, `styles.css`, `contact.js`, and `assets/` together. Do not upload an enclosing ZIP or extra portfolio folder.
+2. Commit the changes to the branch used by GitHub Pages.
+3. Wait for the Pages deployment to finish in Actions.
+4. Refresh the live site and check the updated sections.
+
+## Work sample context
+
+The Selected Work section links to public documentation and technology resources. The Release Notes FAQ revisions and Rovo assistant are described as work in progress. The published FAQ may not yet reflect the revisions discussed in the narrative.
+
+The Rovo project is presented conceptually. Internal prompts, configurations, source materials, and screenshots are not included. Atlassian and Slack links provide technology background; they are not demonstrations of the internal assistant. This personal portfolio does not imply endorsement by Docusign, Atlassian, or Slack.
