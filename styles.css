@@ -91,7 +91,15 @@ nav a { display:inline-block; padding:.5rem 0; }
 .project-links a { display:inline-block; padding:.5rem 0; }
 .work-note { background:var(--paper); border-left:3px solid var(--wine); padding:.8rem 1rem; }
 .contact { background:var(--sage); }
-.contact-address { margin-top:1rem; overflow-wrap:anywhere; }
+ .contact-actions { display:flex; flex-wrap:wrap; align-items:center; gap:.8rem 1.5rem; margin-top:1.5rem; }
+.contact-email { font-size:1.15rem; overflow-wrap:anywhere; padding:.5rem 0; }
+.copy-email { border:1px solid var(--wine); background:transparent; color:var(--wine); padding:.7rem 1rem; font:inherit; font-size:.9rem; cursor:pointer; }
+.copy-email[hidden] { display:none; }
+.copy-email:hover { background:var(--white); }
+.copy-email:focus-visible { outline:3px solid var(--wine); outline-offset:4px; }
+.contact-help,.copy-status { font-size:.85rem; color:var(--muted); margin-top:1rem; max-width:38rem; }
+.copy-status:empty { display:none; }
+@media print { .copy-email,.contact-help,.copy-status { display:none; } }
 .section-content { min-width:0; }
 :target { scroll-margin-top:1rem; }
 .site-footer a:focus-visible { outline-color:var(--paper); }
