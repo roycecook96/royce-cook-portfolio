@@ -117,3 +117,16 @@ h1,h2 { text-wrap:balance; }
 .site-footer a:focus-visible { outline-color:var(--paper); }
 .table-wrap th,.table-wrap td { overflow-wrap:anywhere; }
 @media (max-width:640px) { .table-wrap th,.table-wrap td { padding:.6rem .35rem; } }
+
+/* UX report changes: contact-first hero, back-to-top links, new-window labels. */
+.hero-actions { display:flex; flex-wrap:wrap; gap:.8rem 1rem; }
+.button:focus-visible { outline:3px solid var(--wine); outline-offset:4px; }
+.button-secondary { background:transparent; color:var(--wine); border:1px solid var(--wine); }
+.button-secondary:hover { background:var(--white); }
+.new-window { font-size:.875rem; white-space:nowrap; }
+.back-to-top { grid-column:1 / -1; margin:2rem 0 0; font-size:.9rem; }
+.back-to-top a { display:inline-block; padding:.5rem 0; }
+.contact-email { font-weight:700; }
+@media (max-width:640px) { .hero-actions .button { width:100%; justify-content:space-between; } }
+@media print { .back-to-top,.new-window { display:none; } }
+.beyond-grid .back-to-top { margin-top:0; }
