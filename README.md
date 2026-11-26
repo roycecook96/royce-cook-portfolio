@@ -11,7 +11,7 @@ A personal portfolio for my work in technical communication and my doctoral stud
 - **Professional philosophy:** Reader-centered organization, accessibility, collaboration, and human accountability.
 - **Research:** My developing interest in enterprise documentation as customer support infrastructure, including a comparison of potential AI support and human review.
 - **Beyond the desk:** A brief introduction to riding and my focus on confidence, fundamentals, and consistent practice.
-- **Contact:** A selectable email address and a Copy email button.
+- **Contact:** A selectable email address, a Copy email button, and a GitHub profile link.
 
 ## Design and accessibility
 
