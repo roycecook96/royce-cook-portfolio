@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Royce Cook is a Technical Writer 3 at Docusign who focuses on AI-assisted documentation and is a doctoral student at Texas Tech University. Explore her work and get in touch.">
   <title>Royce Cook | AI-Assisted Documentation · Technical Writer at Docusign</title>
-  <link rel="stylesheet" href="styles.css?v=2026-11-25g">
+  <link rel="stylesheet" href="styles.css?v=2026-11-25h">
   <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -145,83 +145,100 @@
       <li class="tile-ride"><a href="#beyond"><span class="tile-tag">Beyond the desk</span><span class="tile-title">Room for the ride.</span></a></li>
     </ul>
   </section>
-  <section class="work section" id="projects" aria-labelledby="projects-title">
-    <div class="section-label"><span class="section-number" aria-hidden="true">01</span><p class="eyebrow">Project details</p></div>
-    <div class="section-content"><h2 id="projects-title">AI-assisted documentation in practice.</h2><p class="section-intro">These projects show how I use AI and automation to make documentation faster to produce and easier to trust: an AI agent for release notes, documentation for an open-source computer vision library, and the release communication processes those tools support.</p>
-      <article class="work-item" id="work-1" aria-labelledby="project-1"><span class="work-index" aria-hidden="true">01</span><div><p class="project-label">Project 01</p><h3 id="project-1">Release Notes Agent: AI-Assisted Release Communication</h3>
+  <section class="projects" id="projects" aria-labelledby="projects-title">
+    <p class="eyebrow">Project details</p>
+    <h2 id="projects-title">AI-assisted documentation in practice.</h2>
+    <div class="tab-shell">
+      <div class="tab-list" role="tablist" aria-label="Projects" hidden><button type="button" class="tab" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true" tabindex="0"><span class="tab-num" aria-hidden="true">01</span>Release Notes Agent</button><button type="button" class="tab" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1"><span class="tab-num" aria-hidden="true">02</span>Roboflow Supervision</button><button type="button" class="tab" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1"><span class="tab-num" aria-hidden="true">03</span>Workspaces Release Notes</button><button type="button" class="tab" role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false" tabindex="-1"><span class="tab-num" aria-hidden="true">04</span>Release Notes FAQ</button></div>
+      <div class="tab-panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1" tabindex="0">
+        <article class="work-item tab-article" id="work-1" aria-labelledby="project-1"><div class="wi-head"><p class="project-label">Project 01</p><h3 id="project-1">Release Notes Agent: AI-Assisted Release Communication</h3>
           <p class="project-summary">An AI agent and intake workflow that take release notes from request to review-ready draft.</p>
           <p class="tags">AI Agents · Atlassian Rovo · Workflow Automation · Human-in-the-Loop Review</p>
           <dl class="facts"><div><dt>Role</dt><dd>Designer and builder</dd></div><div><dt>Tools</dt><dd>Atlassian Rovo, Slack Workflow Builder, Jira</dd></div><div><dt>Status</dt><dd>In use, fully automated</dd></div></dl>
+          </div><div class="wi-body">
           <p>I built a release notes agent in Atlassian Rovo that triages incoming release note requests and drafts release notes from the information product managers submit. To give the agent reliable input, I paired it with a structured Slack intake workflow that collects the details a release note needs at the moment a request is made.</p>
           <p>The workflow keeps people accountable at every step. Technical writers review and edit each AI-generated draft, and product managers approve the final text before it is published. The agent removes the slowest parts of the process (gathering information and producing a first draft) without removing editorial judgment.</p>
           <p>Designing the agent meant treating AI as one component of a documentation system: defining the inputs it needs, the output format writers can work with, and the review points where human expertise matters most. The project also grounds my doctoral research on how AI-assisted workflows are changing enterprise documentation.</p>
           <p class="work-note">This confidential project is described at a high level. Internal materials are not publicly accessible. No internal prompts, configurations, source materials, or screenshots are included. The resources below are public technology references, not demonstrations of my agent or evidence of its implementation. This personal portfolio does not imply endorsement by Docusign, Atlassian, or Slack.</p>
           <ul class="project-links"><li><a href="https://www.atlassian.com/software/rovo" target="_blank" rel="noopener noreferrer"><span>Learn about Atlassian Rovo <span class="new-window">(opens in new window)</span></span> <span aria-hidden="true">↗</span></a></li><li><a href="https://slack.com/features/workflow-automation" target="_blank" rel="noopener noreferrer"><span>Learn about Slack Workflow Builder <span class="new-window">(opens in new window)</span></span> <span aria-hidden="true">↗</span></a></li></ul>
-        </div></article>
-      <article class="work-item" id="work-2" aria-labelledby="project-2"><span class="work-index" aria-hidden="true">02</span><div><p class="project-label">Project 02</p><h3 id="project-2">Roboflow Supervision: Open-Source Tutorial Contribution</h3>
+        
+          </div></article>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" tabindex="0">
+        <article class="work-item tab-article" id="work-2" aria-labelledby="project-2"><div class="wi-head"><p class="project-label">Project 02</p><h3 id="project-2">Roboflow Supervision: Open-Source Tutorial Contribution</h3>
           <p class="project-summary">Clearer setup guidance for developers building with computer vision models.</p>
           <p class="tags">Open Source · AI/ML Developer Documentation · Docs-as-Code</p>
           <dl class="facts"><div><dt>Role</dt><dd>Open-source contributor</dd></div><div><dt>Tools</dt><dd>Markdown, Python, GitHub pull requests</dd></div><div><dt>Status</dt><dd>Merged <time datetime="2026-11-25">November 25, 2026</time></dd></div></dl>
+          </div><div class="wi-body">
           <p>Supervision is Roboflow’s open-source Python library for computer vision. I contributed a documentation update to its Track Objects tutorial, which shows developers how to detect, track, and annotate objects in video.</p>
           <p>The tutorial assumed setup knowledge that new readers might not have. I added a Prerequisites section that states the required Python version, gives install commands with minimum package versions, explains that readers need only one of the three inference frameworks the examples cover, and tells readers which examples need a Roboflow API key and how to keep that key out of source control.</p>
           <figure class="work-figure"><img src="assets/roboflow-prerequisites.png" width="760" height="445" loading="lazy" alt="The Prerequisites section I added to the Supervision Track Objects tutorial."><figcaption>The published Prerequisites section on the Supervision documentation site.</figcaption></figure>
           <p>I also made the keypoint tracking examples handle video frames where no one is tracked, and I updated the explanation that follows them so the text matches the code.</p>
           <p>The contribution went through the project’s pull request workflow, including automated checks and maintainer review, and was merged in November 2026. It reflects how I approach developer documentation: anticipate what readers need before they start, and keep code samples and explanations accurate together.</p>
           <ul class="project-links"><li><a href="https://github.com/roboflow/supervision/pull/3074" target="_blank" rel="noopener noreferrer"><span>View the merged pull request on GitHub <span class="new-window">(opens in new window)</span></span> <span aria-hidden="true">↗</span></a></li><li><a href="https://supervision.roboflow.com/develop/how_to/track_objects/#prerequisites" target="_blank" rel="noopener noreferrer"><span>Read the published Track Objects tutorial <span class="new-window">(opens in new window)</span></span> <span aria-hidden="true">↗</span></a></li></ul>
-        </div></article>
-      <article class="work-item" id="work-3" aria-labelledby="project-3"><span class="work-index" aria-hidden="true">03</span><div><p class="project-label">Project 03</p><h3 id="project-3">Docusign Workspaces Release Notes</h3>
+        
+          </div></article>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" tabindex="0">
+        <article class="work-item tab-article" id="work-3" aria-labelledby="project-3"><div class="wi-head"><p class="project-label">Project 03</p><h3 id="project-3">Docusign Workspaces Release Notes</h3>
           <p class="project-summary">Coordinating product updates from stakeholder intake through publication.</p>
           <p class="tags">Release Communication · Cross-Functional Collaboration · Publishing Operations</p>
           <dl class="facts"><div><dt>Role</dt><dd>End-to-end release communication</dd></div><div><dt>Tools</dt><dd>Slack intake workflow, Jira, Release Notes Agent</dd></div><div><dt>Status</dt><dd>Ongoing</dd></div></dl>
+          </div><div class="wi-body">
           <p>Release notes serve as a critical communication channel between product development teams and customers. My work on Docusign Workspaces release notes involves managing the end-to-end communication process to ensure that product updates are accurate, timely, and accessible to their intended audiences.</p>
           <p>I work directly with Product and Program managers to coordinate the submission of authoritative release information through a structured Slack intake workflow. My responsibilities include educating stakeholders on the release notes process, managing Jira tickets, coordinating documentation activities, and overseeing the progression of release information from initial submission through publication.</p>
           <p>This work requires balancing technical accuracy, editorial consistency, stakeholder coordination, and publishing deadlines. By establishing clear expectations and maintaining a structured workflow, I help create a reliable process for communicating product changes to customers.</p>
           <p>This is the process my Release Notes Agent now supports, and running it day to day shows me where automation helps and where human coordination still matters.</p>
           <ul class="project-links"><li><a href="https://support.docusign.com/s/document-item?_LANG=enus&amp;bundleId=map3e299eb3-94f1-41fe-9fe7-22b5089a2f6e&amp;language=en_US&amp;topicId=concc8fbfc3-0706-45d5-9759-fc0103c3d023.html" target="_blank" rel="noopener noreferrer"><span>View Workspaces release notes: October 2026 <span class="new-window">(opens in new window)</span></span> <span aria-hidden="true">↗</span></a></li><li><a href="https://support.docusign.com/s/releasenotes?language=en_US&labelKey=Release_Note&page=1" target="_blank" rel="noopener noreferrer"><span>Browse current Docusign release notes <span class="new-window">(opens in new window)</span></span> <span aria-hidden="true">↗</span></a></li></ul>
-        </div></article>
-      <article class="work-item" id="work-4" aria-labelledby="project-4"><span class="work-index" aria-hidden="true">04</span><div><p class="project-label">Project 04</p><h3 id="project-4">Docusign Release Notes FAQ</h3>
+        
+          </div></article>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-4" aria-labelledby="tab-4" tabindex="0">
+        <article class="work-item tab-article" id="work-4" aria-labelledby="project-4"><div class="wi-head"><p class="project-label">Project 04</p><h3 id="project-4">Docusign Release Notes FAQ</h3>
           <p class="project-summary">Clarifying where customers and partners find release information and notifications.</p>
           <p class="tags">Content Modernization · Information Architecture · Technical Accuracy · Cross-Functional Review</p>
           <dl class="facts"><div><dt>Role</dt><dd>Editorial owner</dd></div><div><dt>Tools</dt><dd>Cross-functional review</dd></div><div><dt>Status</dt><dd>Revisions published <time datetime="2026-11">November 2026</time></dd></div></dl>
+          </div><div class="wi-body">
           <p>The Docusign Release Notes FAQ is a customer- and partner-facing resource designed to clarify how release information is communicated, accessed, and maintained. I currently own the editorial revisions for this resource, with a focus on improving the accuracy, organization, and usefulness of the information presented.</p>
           <p>The revisions address essential questions about release communications, including how customers and working partners can receive notifications, where they can locate published release notes, how frequently release information is communicated, and what changes to expect in the communication process.</p>
           <p>Beyond updating the content, this initiative incorporates a cross-functional review process to ensure technical accuracy and supportability. I work with functional partners to evaluate the information, clarify expectations, and ensure that the guidance reflects processes that the organization can reliably support.</p>
           <p>This project demonstrates how technical editing and content governance extend beyond correcting language. By bringing together accurate information, stakeholder validation, and user-centered organization, the revised FAQ is intended to provide a more dependable resource for customers and partners seeking release information.</p>
           <ul class="project-links"><li><a href="https://support.docusign.com/s/articles/DocuSign-Release-Notes-FAQ?language=en_US" target="_blank" rel="noopener noreferrer"><span>Read the updated Docusign Release Notes FAQ <span class="new-window">(opens in new window)</span></span> <span aria-hidden="true">↗</span></a></li></ul>
-        </div></article>
-    <p class="back-to-top"><a href="#home">Back to top <span aria-hidden="true">↑</span></a></p></div>
+        
+          </div></article>
+      </div>
+    </div>
+    <p class="back-to-top"><a href="#home">Back to top <span aria-hidden="true">↑</span></a></p>
   </section>
-  <section class="about section" id="about" aria-labelledby="about-title">
-    <div class="section-label"><span class="section-number" aria-hidden="true">02</span><p class="eyebrow">A little about me</p></div>
-    <div class="section-content"><h2 id="about-title">Putting AI to work in documentation.</h2>
+  <div class="info-tiles">
+    <section class="info-tile" id="about" aria-labelledby="about-title">
+      <p class="eyebrow">About</p>
+      <h2 id="about-title">Putting AI to work in documentation.</h2>
       <p>I design AI-assisted documentation workflows: agents that handle the repetitive parts of documentation work so that writers can spend their time on judgment, accuracy, and the reader. As a Technical Writer 3 at Docusign, I build these workflows into how my team produces customer-facing content.</p>
-      <p>Alongside my professional work, I’m pursuing a PhD in Technical Communication and Rhetoric at Texas Tech University, where I study how generative AI is turning enterprise documentation into customer support infrastructure, and how that changes the work technical communicators do.</p>
-      <h3>Current work</h3><p>I built a Rovo agent and a Slack intake workflow that move release notes from a product manager’s request to a review-ready draft. As Scrum Master for the Release Notes Task Force, I connect that automation with the people and processes that keep product information accurate and timely. I also own Web Forms documentation and the Docusign Release Notes FAQ.</p>
-    <p class="back-to-top"><a href="#home">Back to top <span aria-hidden="true">↑</span></a></p></div>
-  </section>
-  <section class="philosophy section" id="philosophy" aria-labelledby="philosophy-title">
-    <div class="section-label"><span class="section-number" aria-hidden="true">03</span><p class="eyebrow">Professional philosophy</p></div>
-    <div class="section-content"><h2 id="philosophy-title">Start with the reader. Build for trust.</h2>
+      <p>I built a Rovo agent and a Slack intake workflow that move release notes from a product manager’s request to a review-ready draft. As Scrum Master for the Release Notes Task Force, I connect that automation with the people and processes that keep product information accurate and timely. I also own Web Forms documentation and the Docusign Release Notes FAQ.</p>
+    </section>
+    <section class="info-tile info-pink" id="philosophy" aria-labelledby="philosophy-title">
+      <p class="eyebrow">How I work</p>
+      <h2 id="philosophy-title">Start with the reader. Build for trust.</h2>
       <p>Useful technical communication begins with understanding what someone needs to accomplish. I organize content around those tasks, use consistent language, and make the next step easy to find. Clear structure and accessibility are part of the work from the beginning.</p>
-      <p>I also see documentation as a shared responsibility. Technical accuracy depends on collaboration with product experts; lasting usefulness depends on review, maintenance, and clear ownership. In AI-assisted workflows, I keep human judgment central to evaluating information and deciding what is ready to publish.</p>
       <div class="principles"><h3>Principles in practice</h3><ul><li>Write for the reader’s task and context.</li><li>Make information easy to navigate and maintain.</li><li>Validate guidance with the people responsible for the product.</li><li>Keep human review and accountability in AI-assisted work.</li></ul></div>
-    <p class="back-to-top"><a href="#home">Back to top <span aria-hidden="true">↑</span></a></p></div>
-  </section>
-  <section class="research section" id="research" aria-labelledby="research-title">
-    <div class="section-label"><span class="section-number" aria-hidden="true">04</span><p class="eyebrow">Doctoral research</p></div>
-    <div class="section-content"><h2 id="research-title">What happens when knowledge becomes infrastructure?</h2>
+    </section>
+    <section class="info-tile info-sage" id="research" aria-labelledby="research-title">
+      <p class="eyebrow">Research</p>
+      <h2 id="research-title">What happens when knowledge becomes infrastructure?</h2>
       <p>My developing dissertation focus is <cite>Productizing Knowledge: The Transformation of Enterprise Documentation into Customer Support Infrastructure</cite>. I’m interested in how generative AI changes documentation and the work technical communicators do.</p>
-      <h3>Speaking</h3><p>I presented <cite>Productizing Knowledge: The Future of Technical Communication in the Age of AI</cite> at a technical communication meetup in November 2026. The talk covered how generative AI shifts documentation from static content to dynamic, reusable knowledge systems, with practical examples of AI-assisted documentation workflows.</p>
+      <p>I presented <cite>Productizing Knowledge: The Future of Technical Communication in the Age of AI</cite> at a technical communication meetup in November 2026. The talk covered how generative AI shifts documentation from static content to dynamic, reusable knowledge systems, with practical examples of AI-assisted documentation workflows.</p>
       <ul class="project-links"><li><a href="https://docs.google.com/presentation/d/1oIh-3zlvGAPUZ5F5FdYEQ8b_Fx-8XQVD69ikmtJ_bqE/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><span>View the presentation slides <span class="new-window">(opens in new window)</span></span> <span aria-hidden="true">↗</span></a></li></ul>
+      <details class="research-more"><summary>Research questions and framework</summary>
       <h3>Questions I’m exploring</h3><ol class="questions"><li>How is generative AI transforming enterprise documentation into customer support infrastructure?</li><li>What AI-assisted workflows do technical communicators use to productize enterprise knowledge?</li></ol>
       <div class="table-wrap"><table><caption>AI-assisted documentation: where human judgment matters</caption><thead><tr><th scope="col">Workflow activity</th><th scope="col">Potential AI support</th><th scope="col">Human review</th></tr></thead><tbody><tr><th scope="row">Content comparison</th><td>Surface differences between versions.</td><td>Determine which changes affect accuracy, meaning, and user tasks.</td></tr><tr><th scope="row">Draft revision</th><td>Suggest wording and organization.</td><td>Resolve ambiguity and validate terminology, context, and audience fit.</td></tr><tr><th scope="row">Quality review</th><td>Flag possible inconsistencies or gaps.</td><td>Check against authoritative information and decide what is ready to publish.</td></tr></tbody></table><p class="work-note">This framework describes my approach to evaluating AI support, rather than the configuration of a specific internal tool.</p></div>
-    <p class="back-to-top"><a href="#home">Back to top <span aria-hidden="true">↑</span></a></p></div>
-  </section>
-  <section class="beyond section" id="beyond" aria-labelledby="beyond-title">
-    <div class="section-label"><span class="section-number" aria-hidden="true">05</span><p class="eyebrow">Beyond the desk</p></div>
-    <div class="section-content beyond-grid"><div><h2 id="beyond-title">Room for the ride.</h2><p>Outside of work and school, you’ll often find me at the barn. I’m focused on building confidence and strong riding fundamentals through consistent practice. Riding gives me space to slow down, stay curious, and appreciate steady progress.</p></div>
-      <figure><img src="assets/riding-saddle.jpg" width="1200" height="900" loading="lazy" alt="A chestnut horse in a brown English saddle and navy quilted pad beside a white fence."><figcaption>Building confidence in flatwork and over fences, one consistent ride at a time.</figcaption></figure>
-    <p class="back-to-top"><a href="#home">Back to top <span aria-hidden="true">↑</span></a></p></div>
+      </details>
+    </section>
+  </div>
+  <p class="back-to-top tiles-top"><a href="#home">Back to top <span aria-hidden="true">↑</span></a></p>
+  <section class="ride" id="beyond" aria-labelledby="beyond-title">
+    <img src="assets/riding-saddle.jpg" width="1200" height="900" loading="lazy" alt="A chestnut horse in a brown English saddle and navy quilted pad beside a white fence.">
+    <div class="ride-card"><p class="eyebrow">Beyond the desk</p><h2 id="beyond-title">Room for the ride.</h2><p>Outside of work and school, you’ll often find me at the barn. I’m focused on building confidence and strong riding fundamentals through consistent practice. Riding gives me space to slow down, stay curious, and appreciate steady progress.</p></div>
   </section>
   <section class="contact contact-banner" id="contact" aria-labelledby="contact-title">
     <h2 id="contact-title">Let’s talk about<br>AI-assisted documentation.</h2>
@@ -230,5 +247,6 @@
 </main>
 <footer class="site-footer"><p class="footer-name">Royce Cook</p><p>AI-assisted documentation. Doctoral research. Riding.</p><a href="#home">Back to top <span aria-hidden="true">↑</span></a><p class="footer-small">© 2026 Royce Cook · Personal portfolio</p></footer>
 <script src="contact.js?v=2026-11-25b" defer></script>
+<script src="tabs.js?v=2026-11-25a" defer></script>
 </body>
 </html>
