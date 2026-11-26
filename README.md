@@ -7,12 +7,12 @@ A personal portfolio focused on AI-assisted documentation: my work as a Technica
 ## Content
 
 - **Hero:** Who I am and what I do, with contact as the main call to action.
-- **About and current work:** Building AI agents and workflows for documentation at Docusign.
-- **Selected work:** Four projects, each with a labeled role, tools, and status:
+- **Selected work:** A tiled overview, then four projects, each with a labeled role, tools, and status:
   1. Release Notes Agent, an Atlassian Rovo agent and Slack intake workflow for release notes
   2. Roboflow Supervision, a merged open-source contribution to a computer vision tutorial
   3. Docusign Workspaces Release Notes
   4. Docusign Release Notes FAQ
+- **About and current work:** Building AI agents and workflows for documentation at Docusign.
 - **Professional philosophy:** Reader-centered organization, accessibility, collaboration, and human accountability in AI-assisted work.
 - **Research:** My dissertation focus on enterprise documentation as customer support infrastructure, my November 2026 meetup talk, and a comparison of AI support and human review.
 - **Beyond the desk:** Riding.
@@ -29,7 +29,7 @@ The Selected work section is designed to be easy for AI tools and search engines
 
 ## Design and accessibility
 
-The site uses an ivory, burgundy, and sage palette, serif headings, and responsive CSS Grid layouts. Accessibility features include semantic landmarks, a skip link, ordered headings, descriptive alt text, visible keyboard focus, scoped table headers, back-to-top links, external links labeled "(opens in new window)", and reduced-motion support. A print stylesheet is included.
+The site uses an ivory, burgundy, and sage palette with serif headings: a full-width burgundy hero with a knowledge-network graphic, a bento-grid project overview, rounded project cards, and a burgundy contact banner, all in responsive CSS Grid layouts. Accessibility features include semantic landmarks, a skip link, ordered headings, descriptive alt text, visible keyboard focus, scoped table headers, back-to-top links, external links labeled "(opens in new window)", and reduced-motion support. A print stylesheet is included.
 
 The live site was checked with WAVE: 0 errors and 0 contrast errors. The remaining "possible heading" alerts flag the hero tagline and hero quote, which are intentionally styled text rather than headings.
 
