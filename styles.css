@@ -131,3 +131,7 @@ h1,h2 { text-wrap:balance; }
 .hq-rc { font:italic 3.2rem/1 var(--serif); letter-spacing:-.08em; text-transform:none; padding-right:.1em; }
 @media (max-width:900px) { .hero-quote { min-height:330px; padding:2rem; } }
 @media (max-width:640px) { .hero-quote { min-height:0; padding:1.75rem; } .hq-rc { font-size:2.6rem; } }
+.hero-quote { position:relative; overflow:hidden; }
+.hq-net { position:absolute; right:-20px; bottom:40px; width:56%; height:auto; color:rgba(248,245,239,.28); pointer-events:none; }
+.hq-text,.hq-meta { position:relative; }
+@media (max-width:640px) { .hq-net { display:none; } }
