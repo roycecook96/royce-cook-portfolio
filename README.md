@@ -7,7 +7,7 @@ A personal portfolio focused on AI-assisted documentation: my work as a Technica
 ## Content
 
 - **Hero:** Who I am and what I do, with contact as the main call to action.
-- **Selected work:** A tiled overview, then four projects, each with a labeled role, tools, and status:
+- **Selected work:** A tiled overview of projects, research, my talk, and riding, followed by project details for four projects, each with a labeled role, tools, and status:
   1. Release Notes Agent, an Atlassian Rovo agent and Slack intake workflow for release notes
   2. Roboflow Supervision, a merged open-source contribution to a computer vision tutorial
   3. Docusign Workspaces Release Notes

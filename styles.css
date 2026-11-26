@@ -191,3 +191,25 @@ body { overflow-x:clip; }
 .facts dt { margin:0; font-size:.75rem; letter-spacing:.1em; color:var(--muted); }
 .facts dd { font-size:.92rem; color:var(--ink); }
 @media (max-width:640px) { .facts { flex-direction:column; gap:.3rem; } }
+/* Match Concept 3: rc header, overview grid, contact banner. */
+.site-header .wordmark { font-style:italic; font-size:2.1rem; letter-spacing:-.08em; padding-right:.1em; }
+.overview { padding:3.5rem 3rem 4rem; }
+.overview-head { display:flex; justify-content:space-between; align-items:flex-end; gap:2rem; margin-bottom:1.5rem; }
+.overview-head h2 { margin:0; font-size:clamp(2.2rem,4vw,3.25rem); }
+.overview-head p { margin:0; max-width:24rem; color:var(--muted); font-size:.95rem; line-height:1.5; }
+.overview .bento { margin:0; }
+.tile-research .tile-title { font-size:1.75rem; }
+.tile-talk a { background:var(--sage); border-color:var(--sage); }
+.tile-ride a { background:#efd3d9; border-color:#efd3d9; }
+.contact-banner { display:flex; justify-content:space-between; align-items:center; gap:2rem; padding:2.75rem 3rem; }
+.contact-banner h2 { margin:0; color:var(--paper); font-size:clamp(2rem,3.6vw,2.9rem); line-height:1.08; }
+.contact-side { display:flex; flex-direction:column; align-items:flex-end; gap:.75rem; flex-shrink:0; }
+.contact-banner .contact-email { display:inline-flex; align-items:center; min-height:3.25rem; padding:0 1.6rem; border-radius:999px; background:var(--paper); color:var(--wine); font-weight:700; font-size:1rem; text-decoration:none; }
+.contact-banner .contact-email:hover { background:var(--white); }
+.contact-extras { display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:.75rem 1.25rem; }
+.contact-banner .copy-email { padding:.45rem 1rem; font-size:.85rem; }
+.contact-banner .contact-link { font-size:.9rem; padding:.5rem 0; }
+.contact-banner .copy-status { margin:0; text-align:right; }
+@media (max-width:900px) { .overview { padding:3rem 1.5rem 3.5rem; } .contact-banner { padding:2.25rem 1.75rem; } }
+@media (max-width:640px) { .overview-head { flex-direction:column; align-items:flex-start; gap:.6rem; } .contact-banner { flex-direction:column; align-items:flex-start; } .contact-side,.contact-extras { align-items:flex-start; justify-content:flex-start; } .contact-banner .copy-status { text-align:left; } }
+.tile-research a { background:var(--white); border-color:var(--line); }
