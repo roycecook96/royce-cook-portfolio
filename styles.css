@@ -213,3 +213,51 @@ body { overflow-x:clip; }
 @media (max-width:900px) { .overview { padding:3rem 1.5rem 3.5rem; } .contact-banner { padding:2.25rem 1.75rem; } }
 @media (max-width:640px) { .overview-head { flex-direction:column; align-items:flex-start; gap:.6rem; } .contact-banner { flex-direction:column; align-items:flex-start; } .contact-side,.contact-extras { align-items:flex-start; justify-content:flex-start; } .contact-banner .copy-status { text-align:left; } }
 .tile-research a { background:var(--white); border-color:var(--line); }
+/* Lower half C: tabbed projects, info tiles, full-bleed ride. */
+.projects { padding:4rem 3rem 1rem; }
+.projects > .eyebrow { margin-bottom:.8rem; }
+.projects > h2 { margin:0 0 1.75rem; font-size:clamp(2.2rem,4vw,3.25rem); }
+.tab-shell { border:1px solid var(--line); border-radius:26px; background:var(--white); overflow:hidden; }
+.tab-list { display:flex; flex-wrap:wrap; gap:.5rem; padding:.9rem; background:#efeee6; border-bottom:1px solid var(--line); }
+.tab-list[hidden] { display:none; }
+.tab { min-height:3rem; padding:0 1.25rem; border:1px solid var(--line); border-radius:999px; background:var(--white); color:var(--ink); font:inherit; font-size:.95rem; cursor:pointer; }
+.tab:hover { border-color:var(--ink); }
+.tab[aria-selected="true"] { background:var(--ink); border-color:var(--ink); color:var(--white); }
+.tab:focus-visible { outline:3px solid var(--wine); outline-offset:3px; }
+.tab-num { font-family:var(--serif); font-style:italic; margin-right:.5rem; }
+.tab-panel { padding:3rem; }
+.tab-panel:focus-visible { outline:3px solid var(--wine); outline-offset:-6px; }
+.tab-panel + .tab-panel { border-top:1px solid var(--line); }
+.tab-article { display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:2.75rem; padding:0; margin:0; border:0; border-radius:0; background:none; }
+.tab-article .project-label { display:inline-block; padding:.3rem .85rem; border-radius:999px; background:var(--wine); color:var(--white); letter-spacing:.06em; margin:0; }
+.tab-article h3 { font-family:var(--serif); font-weight:400; font-size:clamp(2rem,3.4vw,2.75rem); line-height:1.05; letter-spacing:-.04em; margin:1rem 0 .9rem; }
+.tab-article .project-summary { margin-bottom:1rem; }
+.tab-article .tags { border:0; padding:0; margin-bottom:1.1rem; }
+.tab-article .facts { display:grid; grid-template-columns:5.5rem minmax(0,1fr); gap:.65rem 1rem; padding:1.1rem 0 0; border-top:1px solid var(--line); flex-direction:row; }
+.tab-article .facts div { display:contents; }
+.tab-article .facts dt { color:var(--wine); }
+.tab-article .wi-body > p:first-child { margin-top:0; }
+.info-tiles { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.25rem; padding:3rem 3rem 0; }
+.info-tile { padding:2.1rem; border-radius:24px; background:var(--white); border:1px solid var(--line); min-width:0; }
+.info-tile h2 { font-size:1.85rem; line-height:1.12; margin:0 0 1rem; }
+.info-tile p { font-size:.98rem; }
+.info-pink { background:#efd3d9; border-color:#efd3d9; }
+.info-sage { background:var(--sage); border-color:var(--sage); }
+.info-tile .principles { background:none; border:0; padding:0; margin-top:1rem; }
+.info-tile .principles h3 { font-size:1rem; }
+.info-tile .project-links { margin-top:.5rem; }
+.research-more { margin-top:1.25rem; border-top:1px solid #c3cfbe; padding-top:1rem; }
+.research-more summary { cursor:pointer; font-weight:700; min-height:2.75rem; display:flex; align-items:center; }
+.research-more summary:focus-visible { outline:3px solid var(--wine); outline-offset:3px; }
+.research-more .table-wrap { overflow-x:auto; }
+.research-more table { font-size:.82rem; min-width:26rem; }
+.tiles-top { padding:0 3rem; }
+.ride { position:relative; width:100vw; margin:3.5rem 0 0 calc(50% - 50vw); }
+.ride img { display:block; width:100%; height:480px; object-fit:cover; border-radius:0; }
+.ride-card { position:absolute; left:max(3rem, calc(50vw - 600px + 3rem)); bottom:3rem; max-width:28rem; padding:1.9rem 2rem; border-radius:22px; background:var(--white); }
+.ride-card h2 { font-size:2.3rem; margin:0 0 .8rem; }
+.ride-card p:last-child { margin:0; font-size:.98rem; }
+.ride + .contact-banner { margin-top:3.5rem; }
+@media (max-width:900px) { .projects { padding:3rem 1.5rem 1rem; } .tab-panel { padding:2rem; } .tab-article { grid-template-columns:1fr; gap:1.5rem; } .info-tiles { grid-template-columns:1fr; padding:2.5rem 1.5rem 0; } .tiles-top { padding:0 1.5rem; } }
+@media (max-width:640px) { .tab-panel { padding:1.5rem; } .tab { flex:1 1 100%; justify-content:flex-start; text-align:left; } .ride img { height:300px; } .ride-card { position:relative; left:auto; bottom:auto; margin:-2.5rem 1rem 0; } }
+@media print { .tab-list { display:none; } .tab-panel[hidden] { display:block; } .ride-card { position:static; } }
