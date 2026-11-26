@@ -268,6 +268,10 @@ body { overflow-x:clip; }
 .framework .table-wrap { margin-top:0; }
 .framework table { font-size:.9rem; }
 @media (max-width:900px) { .framework { grid-template-columns:1fr; gap:1.5rem; margin:1.25rem 1.5rem 0; } .framework .table-wrap { overflow-x:auto; } }
+/* Ride photo: card sits over the open arena on the right. */
+.ride img { object-position:50% 62%; }
+.ride-card { left:auto; right:max(3rem, calc(50vw - 600px + 3rem)); }
+@media (max-width:640px) { .ride-card { right:auto; } .ride img { object-position:30% 60%; } }
 /* Final polish. */
 .site-footer { box-shadow:0 0 0 100vmax var(--ink); clip-path:inset(0 -100vmax); margin-top:4rem; }
 .ride + .contact-banner + * { margin-top:0; }
