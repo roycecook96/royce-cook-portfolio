@@ -268,3 +268,19 @@ body { overflow-x:clip; }
 .framework .table-wrap { margin-top:0; }
 .framework table { font-size:.9rem; }
 @media (max-width:900px) { .framework { grid-template-columns:1fr; gap:1.5rem; margin:1.25rem 1.5rem 0; } .framework .table-wrap { overflow-x:auto; } }
+/* Final polish. */
+.site-footer { box-shadow:0 0 0 100vmax var(--ink); clip-path:inset(0 -100vmax); margin-top:4rem; }
+.ride + .contact-banner + * { margin-top:0; }
+@media (max-width:900px) { .hero-net { opacity:.55; width:70%; right:-6rem; top:4rem; } }
+@media (max-width:640px) {
+  .ride-card { margin:-2.5rem 1.5rem 0; }
+  .framework table, .framework thead, .framework tbody, .framework tr, .framework th, .framework td { display:block; width:auto; }
+  .framework table { min-width:0; }
+  .framework thead { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+  .framework tbody tr { padding:1rem 0; border-bottom:1px solid #babeb3; }
+  .framework tbody th, .framework tbody td { border:0; padding:.2rem 0; overflow-wrap:normal; }
+  .framework tbody th { font-size:1rem; margin-bottom:.35rem; }
+  .framework td::before { content:attr(data-label) ": "; font-weight:700; color:var(--wine); }
+}
+@media (max-width:900px) { .hero-net { opacity:.4; width:52%; right:-4rem; top:1.5rem; } }
+@media (max-width:640px) { .framework caption { display:block; margin-bottom:.5rem; } }
