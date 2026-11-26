@@ -143,4 +143,6 @@ h1,h2 { text-wrap:balance; }
 .facts dd { margin:0; font-size:.9rem; line-height:1.45; overflow-wrap:anywhere; }
 @media (max-width:640px) { .facts { grid-template-columns:1fr; gap:.6rem; } }
 .work-figure { margin:1.1rem 0 1.2rem; }
-.work-figure img { border:1px solid var(--line); border-radius:.4rem; box-shadow:0 12px 28px -22px rgba(41,43,40,.5); }
+.work-figure img { border:1px solid var(--line); box-shadow:0 12px 28px -22px rgba(41,43,40,.5); }
+/* Consistent rounded corners on all content images. */
+main img { border-radius:.6rem; }
