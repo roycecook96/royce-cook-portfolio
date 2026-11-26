@@ -284,3 +284,5 @@ body { overflow-x:clip; }
 }
 @media (max-width:900px) { .hero-net { opacity:.4; width:52%; right:-4rem; top:1.5rem; } }
 @media (max-width:640px) { .framework caption { display:block; margin-bottom:.5rem; } }
+.projects > .section-intro { max-width:46rem; color:var(--muted); font-size:1.05rem; margin:-.75rem 0 1.75rem; }
+.contact-copy p { margin:1rem 0 0; max-width:32rem; color:rgba(248,245,239,.92); font-size:1rem; }
