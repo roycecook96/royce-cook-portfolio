@@ -261,3 +261,10 @@ body { overflow-x:clip; }
 @media (max-width:900px) { .projects { padding:3rem 1.5rem 1rem; } .tab-panel { padding:2rem; } .tab-article { grid-template-columns:1fr; gap:1.5rem; } .info-tiles { grid-template-columns:1fr; padding:2.5rem 1.5rem 0; } .tiles-top { padding:0 1.5rem; } }
 @media (max-width:640px) { .tab-panel { padding:1.5rem; } .tab { flex:1 1 100%; justify-content:flex-start; text-align:left; } .ride img { height:300px; } .ride-card { position:relative; left:auto; bottom:auto; margin:-2.5rem 1rem 0; } }
 @media print { .tab-list { display:none; } .tab-panel[hidden] { display:block; } .ride-card { position:static; } }
+/* Research framework: its own full-width card below the tiles. */
+.framework { display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:2.5rem; align-items:start; margin:1.25rem 3rem 0; }
+.framework h3 { margin-top:0; font-size:1.15rem; }
+.framework .questions { margin-bottom:0; }
+.framework .table-wrap { margin-top:0; }
+.framework table { font-size:.9rem; }
+@media (max-width:900px) { .framework { grid-template-columns:1fr; gap:1.5rem; margin:1.25rem 1.5rem 0; } .framework .table-wrap { overflow-x:auto; } }
