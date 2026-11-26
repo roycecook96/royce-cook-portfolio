@@ -135,3 +135,12 @@ h1,h2 { text-wrap:balance; }
 .hq-net { position:absolute; right:-20px; bottom:40px; width:56%; height:auto; color:rgba(248,245,239,.28); pointer-events:none; }
 .hq-text,.hq-meta { position:relative; }
 @media (max-width:640px) { .hq-net { display:none; } }
+
+/* AI-ready Selected work: labeled facts per project. */
+.facts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.75rem; margin:0 0 1.1rem; padding:.9rem 1rem; background:var(--paper); border:1px solid var(--line); border-radius:.4rem; }
+.facts div { min-width:0; }
+.facts dt { font-size:.75rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--wine); margin:0 0 .2rem; }
+.facts dd { margin:0; font-size:.9rem; line-height:1.45; overflow-wrap:anywhere; }
+@media (max-width:640px) { .facts { grid-template-columns:1fr; gap:.6rem; } }
+.work-figure { margin:1.1rem 0 1.2rem; }
+.work-figure img { border:1px solid var(--line); border-radius:.4rem; box-shadow:0 12px 28px -22px rgba(41,43,40,.5); }

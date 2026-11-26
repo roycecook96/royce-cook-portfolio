@@ -1,47 +1,58 @@
 # Royce Cook — Professional Portfolio
 
-A personal portfolio for my work in technical communication and my doctoral studies in Technical Communication and Rhetoric at Texas Tech University. The site brings together professional practice, research interests, and a brief introduction to my life beyond the desk.
+A personal portfolio focused on AI-assisted documentation: my work as a Technical Writer 3 at Docusign, my open-source documentation contributions, and my doctoral research in Technical Communication and Rhetoric at Texas Tech University.
 
 [View the portfolio](https://roycecook96.github.io/royce-cook-portfolio/)
 
 ## Content
 
-- **About and current work:** My background and responsibilities as a technical writer at Docusign.
-- **Selected work:** Four project narratives covering Web Forms documentation, Workspaces release notes, the Release Notes FAQ, and an AI-assisted Release Notes Assistant using Atlassian Rovo.
-- **Professional philosophy:** Reader-centered organization, accessibility, collaboration, and human accountability.
-- **Research:** My developing interest in enterprise documentation as customer support infrastructure, including a comparison of potential AI support and human review.
-- **Beyond the desk:** A brief introduction to riding and my focus on confidence, fundamentals, and consistent practice.
-- **Contact:** A selectable email address, a Copy email button, and a GitHub profile link.
+- **Hero:** Who I am and what I do, with contact as the main call to action.
+- **About and current work:** Building AI agents and workflows for documentation at Docusign.
+- **Selected work:** Four projects, each with a labeled role, tools, and status:
+  1. Release Notes Agent, an Atlassian Rovo agent and Slack intake workflow for release notes
+  2. Roboflow Supervision, a merged open-source contribution to a computer vision tutorial
+  3. Docusign Workspaces Release Notes
+  4. Docusign Release Notes FAQ
+- **Professional philosophy:** Reader-centered organization, accessibility, collaboration, and human accountability in AI-assisted work.
+- **Research:** My dissertation focus on enterprise documentation as customer support infrastructure, my November 2026 meetup talk, and a comparison of AI support and human review.
+- **Beyond the desk:** Riding.
+- **Contact:** Email link, a Copy email button, and a GitHub profile link.
+
+## AI-ready design
+
+The Selected work section is designed to be easy for AI tools and search engines to read accurately:
+
+- **Structured data:** A JSON-LD block (schema.org `Person` and an `ItemList` of `CreativeWork` entries) describes me and each project in machine-readable form.
+- **Labeled facts:** Each project states its role, tools, and status in a definition list, so the key facts are explicit rather than implied in prose.
+- **Machine-readable dates:** Dates use the `<time>` element with `datetime` values.
+- **Semantic structure:** Each project is an `<article>` with a heading, a one-line summary, and descriptive link text.
 
 ## Design and accessibility
 
-The site uses an ivory, burgundy, and sage palette, serif headings, responsive CSS Grid layouts, and lightweight local SVG illustrations. Accessibility features include semantic landmarks, a skip link, ordered headings, descriptive image alternatives, visible keyboard focus, scoped table headers, balanced heading wrapping, and reduced-motion support. A print stylesheet is also included.
+The site uses an ivory, burgundy, and sage palette, serif headings, and responsive CSS Grid layouts. Accessibility features include semantic landmarks, a skip link, ordered headings, descriptive alt text, visible keyboard focus, scoped table headers, back-to-top links, external links labeled "(opens in new window)", and reduced-motion support. A print stylesheet is included.
+
+The live site was checked with WAVE: 0 errors and 0 contrast errors. The remaining "possible heading" alerts flag the hero tagline and hero quote, which are intentionally styled text rather than headings.
 
 ## Files
 
 ```text
-index.html          Page content and semantic structure
-styles.css          Design system, responsive layouts, and print styles
-contact.js          Email copying and accessible status messages
-assets/horse.svg    Horse illustration
-assets/monogram.svg Favicon
+index.html              Page content, semantic structure, and structured data
+styles.css              Design system, responsive layouts, and print styles
+contact.js              Email copying and accessible status messages
+assets/riding-saddle.jpg  Riding section photo
+assets/roboflow-prerequisites.png  Screenshot of the published Roboflow tutorial section
+assets/social-preview.png  Image shown when the site link is shared
+assets/monogram.svg     Favicon
 ```
 
 The site uses plain HTML, CSS, and a small JavaScript enhancement. No build step, external fonts, or package installation is required.
 
 ## Preview and publish
 
-Open `index.html` in a browser to preview the content and layout. Clipboard access depends on browser permissions and context; test the Copy email button on the live HTTPS site. If clipboard access fails, the script highlights the address and provides manual-copy instructions. Without JavaScript, the address remains visible and selectable.
+Open `index.html` in a browser to preview the site. Test the Copy email button on the live HTTPS site, since clipboard access depends on browser permissions. If clipboard access fails, the script highlights the address and provides manual-copy instructions.
 
-To update the existing GitHub Pages site:
-
-1. Upload changed files to the repository’s top level, keeping `index.html`, `styles.css`, `contact.js`, and `assets/` together. Do not upload an enclosing ZIP or extra portfolio folder.
-2. Commit the changes to the branch used by GitHub Pages.
-3. Wait for the Pages deployment to finish in Actions.
-4. Refresh the live site and check the updated sections.
+The site deploys from the `main` branch with GitHub Pages. When you change `styles.css` or `contact.js`, update the `?v=` value on its link in `index.html` so browsers load the new version instead of a cached copy.
 
 ## Work sample context
 
-The Selected Work section links to public documentation and technology resources. The Release Notes FAQ revisions and Rovo assistant are described as work in progress. The published FAQ may not yet reflect the revisions discussed in the narrative.
-
-The Rovo project is presented conceptually. Internal prompts, configurations, source materials, and screenshots are not included. Atlassian and Slack links provide technology background; they are not demonstrations of the internal assistant. This personal portfolio does not imply endorsement by Docusign, Atlassian, or Slack.
+The Release Notes Agent is a confidential internal project and is described at a high level. Internal prompts, configurations, source materials, and screenshots are not included. The Atlassian and Slack links provide technology background; they are not demonstrations of the agent. This personal portfolio does not imply endorsement by Docusign, Atlassian, Slack, or Roboflow.
