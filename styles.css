@@ -62,9 +62,6 @@ tbody th { width:34%; font-weight:600; }
 figure { margin:0; }
 img { display:block; max-width:100%; height:auto; }
 figcaption { margin-top:.7rem; font-size:.75rem; line-height:1.55; color:var(--muted); }
-.resource-links { list-style:none; padding:0; margin:1.8rem 0 0; }
-.resource-links li { border-bottom:1px solid var(--line); }
-.resource-links a { display:flex; justify-content:space-between; gap:1rem; padding:1rem 0; }
 .site-footer { padding:2.7rem 3rem; background:var(--wine); color:var(--paper); display:grid; grid-template-columns:1fr auto; gap:.3rem 2rem; }
 .site-footer p { margin:0; font-size:.85rem; }
 .site-footer .footer-name { font-family:var(--serif); font-size:1.9rem; grid-column:1; }
